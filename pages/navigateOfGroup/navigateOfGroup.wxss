@@ -1,10 +1,1 @@
 /* pages/navigateOfGroup/navigateOfGroup.wxss */
-.jobHunting,.hobby,.study,.QA,.fellowTownsman{
-  background-color: rgb(87, 206, 103);
-  width: 30%;
-  height: 10px;
-  text-align:center;
-  margin: 100px; 
-  padding: 50px;
- border-radius: 50rpx;
-}
