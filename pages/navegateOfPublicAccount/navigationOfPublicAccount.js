@@ -1,4 +1,4 @@
-// pages/我的/我的.js
+// pages/navegateOfPublicAccount/navigationOfPublicAccount.js
 Page({
 
   /**

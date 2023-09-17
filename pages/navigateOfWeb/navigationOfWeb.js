@@ -1,4 +1,4 @@
-// pages/公众号导航/公众号导航.js
+// pages/navigateOfWeb/navigationOfWeb.js
 Page({
 
   /**

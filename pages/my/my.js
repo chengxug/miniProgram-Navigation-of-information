@@ -1,4 +1,4 @@
-// pages/网站导航/网站导航.js
+// pages/my/my.js
 Page({
 
   /**

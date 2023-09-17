@@ -1,4 +1,4 @@
-// pages/群导航/群导航.js
+// pages/navigateOfGroup/navigateOfGroup.js
 Page({
 
   /**

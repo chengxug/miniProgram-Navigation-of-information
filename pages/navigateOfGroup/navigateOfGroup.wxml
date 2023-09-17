@@ -1,0 +1,25 @@
+<!--pages/navigateOfGroup/navigateOfGroup.wxml-->
+
+<view class="container">
+  <text class="title">群导航</text>
+  <view class="jobHunting">
+    <view class="button-title">求职类</view>
+    <view class="button-desc">简介</view>
+  </view>
+  <view class="hobby">
+    <view class="button-title">爱好类</view>
+    <view class="button-desc">简介</view>
+  </view>
+  <view class="study">
+    <view class="button-title">学习类</view>
+    <view class="button-desc">简介</view>
+  </view>
+  <view class="QA"> <!--Question and Answer-->
+    <view class="button-title">问答类</view>
+    <view class="button-desc">简介</view>
+  </view>
+  <view class="fellowTownsman">
+    <view class="button-tilte">老乡类</view>
+    <view class="button-desc">简介</view>
+  </view>
+</view>

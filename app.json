@@ -1,9 +1,9 @@
 {
   "pages" : [
-    "pages/网站导航/网站导航",
-    "pages/群导航/群导航",
-    "pages/公众号导航/公众号导航",
-    "pages/我的/我的"
+    "pages/navigateOfGroup/navigateOfGroup",
+    "pages/navigateOfWeb/navigationOfWeb",
+    "pages/navegateOfPublicAccount/navigationOfPublicAccount",
+    "pages/my/my"
   ],
   "window" :{
 
