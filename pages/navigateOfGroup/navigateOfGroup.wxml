@@ -1,25 +1,41 @@
 <!--pages/navigateOfGroup/navigateOfGroup.wxml-->
+<view class="page">
 
-<view class="container">
-  <text class="title">群导航</text>
-  <view class="jobHunting">
-    <view class="button-title">求职类</view>
-    <view class="button-desc">简介</view>
+  <!--小喇叭-->
+  <view class="header">
+    <view class="notice">
+      <view class="notice-item">长按QQ群号，微信号可复制</view>
+    </view>
   </view>
-  <view class="hobby">
-    <view class="button-title">爱好类</view>
-    <view class="button-desc">简介</view>
+
+  <!--左侧导航栏-->
+  <view class = "sidenav">
+    <view class = "sidenav-desc">分类</view>
+    <!-- <block> 并不是一个组件，它仅仅是一个包装元素，不会在页面中做任何渲染，只接受控制属性。
+    wx:for,wx:if都是控制属性，用wx:for循环渲染列表，并用wx:if判断哪一个item是被选中状态-->
+      <block wx:for="{{navItems}}">
+         <view class="menu-group{{curNav == item.id ? 'active' : ''}}" bindtap="navToPage" data-index="{{index}}" data-id="{{item.id}}" data-path="{{item.path}}"> {{item.name}} </view>
+         <!--用js中的数组navItems来创建元素，并把数组中对象的值id，path，index绑定到元素上。用?:运算符做判断，是被选中项的类名为menu-groupactive-->
+      </block>
   </view>
-  <view class="study">
-    <view class="button-title">学习类</view>
-    <view class="button-desc">简介</view>
-  </view>
-  <view class="QA"> <!--Question and Answer-->
-    <view class="button-title">问答类</view>
-    <view class="button-desc">简介</view>
-  </view>
-  <view class="fellowTownsman">
-    <view class="button-tilte">老乡类</view>
-    <view class="button-desc">简介</view>
+
+  <!--主页面-->
+  <view class="container">
+
+    <view class="section-title">QQ群</view>
+    <block wx:for="{{conItemsQQ}}">
+        <view class="card">
+          <view class="card-title" data-number="{{item.number}}" catchlongpress="copyText"> {{item.number}}</view> <!--绑定事件：长按复制-->
+          <view class="card-desc">{{item.desc}}</view>
+        </view>
+    </block>
+    
+    <view class="section-title">微信群</view>
+    <block wx:for="{{conItemsWX}}">
+      <view class="card">
+        <view class="card-title" data-number="{{item.number}}" catchlongpress="copyText">{{item.number}}</view>
+        <view class="card-desc">{{item.desc}}</view>
+      </view>
+    </block>
   </view>
 </view>

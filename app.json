@@ -5,6 +5,27 @@
     "pages/navegateOfPublicAccount/navigationOfPublicAccount",
     "pages/my/my"
   ],
+  "tabBar": {
+    "selectedColor":"#33a3dc", 
+    "list": [
+      {
+        "pagePath": "pages/navegateOfPublicAccount/navigationOfPublicAccount",
+        "text": "公众号导航"
+      },
+      {
+        "pagePath": "pages/navigateOfGroup/navigateOfGroup",
+        "text": "群导航"
+      },
+      {
+        "pagePath": "pages/navigateOfWeb/navigationOfWeb",
+        "text": "网址导航"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
   "window" :{
 
   }
