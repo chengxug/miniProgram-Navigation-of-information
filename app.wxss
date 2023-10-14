@@ -1,0 +1,5 @@
+page{
+  background: #f6f6f6;
+}
+/*引入字体文件*/
+@import "resouce/style.wxss"; /*扬声器图标*/

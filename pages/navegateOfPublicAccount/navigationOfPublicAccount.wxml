@@ -1,2 +1,27 @@
 <!--pages/navegateOfPublicAccount/navigationOfPublicAccount.wxml-->
-<text>pages/navegateOfPublicAccount/navigationOfPublicAccount.wxml</text>
+
+<template name="container-item">
+  <view class="section-title">{{title}}</view>
+  <block wx:for="{{item}}">
+    <view class="card">
+      <view class="card-title" data-title="{{item.title}}" catchlongpress="copyTitle">{{item.title}}</view>
+      <view class="card-desc">{{item.desc}}</view>
+    </view>
+  </block>
+</template>
+
+  <!--小喇叭-->
+  <view class="header">
+    <view class="notice">
+      <view class="notice-item">
+      <text class="iconfont icon-volume-up-solid" style="margin:20rpx"></text>长按QQ群号，微信号可复制</view>
+    </view>
+  </view>
+
+<view class="container">
+ <view class="row">
+  <template is="container-item" data="{{title:'信息发布',item:information}}"></template>
+  <template is="container-item" data="{{title:'学习支持', item:studySupport}}"></template>
+  <template is="container-item" data="{{title:'校园生活', item:campusLife}}"></template> 
+ </view>
+</view>

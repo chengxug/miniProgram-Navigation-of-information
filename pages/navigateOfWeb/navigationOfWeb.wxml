@@ -1,2 +1,33 @@
 <!--pages/navigateOfWeb/navigationOfWeb.wxml-->
-<text>pages/navigateOfWeb/navigationOfWeb.wxml</text>
+<template name="container-item">
+  <view class="section-title">{{title}}</view>
+  <block wx:for="{{item}}">
+    <view class="card">
+      <view class="card-title" data-url="{{item.url}}" catchlongpress="copyURL">{{item.title}}</view>
+      <view class="card-url" data-url="{{item.url}}" catchlongpress="copyURL">{{item.url}}</view>
+      <view class="card-desc">{{item.desc}}</view>
+    </view>
+  </block>
+</template>
+<!--小喇叭-->
+<view class="header">
+  <view class="notice">
+    <view class="notice-item"
+      ><text class="iconfont icon-volume-up-solid" style="margin: 20rpx"></text
+      >长按可复制网址</view
+    >
+  </view>
+</view>
+
+<!--主内容区-->
+<view class="container">
+  <view class="row">
+    <!-- <view class="col"> <view class="colorful-card">常见问题</view> </view>
+    <view class="col"> <view class="colorful-card">问题反馈</view> </view>
+    <view class="col"><view class="colorful-card">补充信息</view> </view>
+    <view class="col"><view class="colorful-card">联系我们</view> </view> -->
+    <template is="container-item" data="{{title:'学校官方信息',item:officialInfomation}}"></template>
+    <template is="container-item" data="{{title:'学术和课程支持', item:couseworkAndAcademicSupport}}"></template>
+    <template is="container-item" data="{{title:'校园生活',item:campusLife}}"></template>
+  </view>
+</view>

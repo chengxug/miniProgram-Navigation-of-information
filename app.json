@@ -8,25 +8,36 @@
   "tabBar": {
     "selectedColor":"#33a3dc", 
     "list": [
-      {
-        "pagePath": "pages/navegateOfPublicAccount/navigationOfPublicAccount",
-        "text": "公众号导航"
+      {"pagePath": "pages/navigateOfWeb/navigationOfWeb",
+        "text": "网址导航",
+        "iconPath": "./image/web.png",
+        "selectedIconPath": "./image/web_seleted.png"
       },
       {
         "pagePath": "pages/navigateOfGroup/navigateOfGroup",
-        "text": "群导航"
+        "text": "群导航",
+        "iconPath":"./image/group.png",
+        "selectedIconPath": "./image/group_seleted.png"
       },
       {
-        "pagePath": "pages/navigateOfWeb/navigationOfWeb",
-        "text": "网址导航"
+        "pagePath": "pages/navegateOfPublicAccount/navigationOfPublicAccount",
+        "text": "公众号导航",
+        "iconPath": "./image/public.png",
+        "selectedIconPath": "./image/public_seleted.png"
       },
       {
         "pagePath": "pages/my/my",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "./image/my.png",
+        "selectedIconPath": "./image/my_seleted.png"
       }
     ]
   },
-  "window" :{
-
-  }
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#7BB6c1",
+    "navigationBarTitleText": "小程序",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
+}
 }

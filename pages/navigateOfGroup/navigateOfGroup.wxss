@@ -6,27 +6,30 @@ page{
 
 /*顶部*/
 .header{
+  /* position:absolute;
+  top:0; */
   background-color:#FCFCFC;
-  margin:0px 0px 0px 20%;
-  padding:0px 0px 0px 30px;
+  margin:0 0 0 20%;
+  padding:0 0 0 60rpx;
 }
 
 .notice{
   color:#4A4A4A;
-  padding-right: 30px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-right: 60rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
 }
 
 .notice-item{
-  padding-right: 16px;
-  padding-left: 16px;
-  padding-top:8px;
-  padding-bottom: 8px;
+  padding-right: 30rpx;
+  padding-left: 30rpx;
+  padding-top:16rpx;
+  padding-bottom: 16rpx;
   color: #505b67;
-  font-size: 12px;
-  box-shadow:0 0 6px 2px rgba(0,0,0,0.05);/*元素周围上一层阴影，突出中间内容*/
-  border-radius:4px;
+  font-size: 24rpx;
+  /*元素周围上一层阴影，突出中间内容*/
+  box-shadow:0 0 12rpx 4rpx rgba(0,0,0,0.05);
+  border-radius:12rpx; 
 }
 
 /*左侧边栏  */
@@ -37,67 +40,68 @@ page{
   top: 0;
   bottom:0; 
   left: 0;
-  padding:40px 0 60px;
+  padding:120rpx 0 150rpx;
   width:20%;
   text-align: center;
-  border-radius:4px;
+  border-radius:12rpx;
+  overflow:scroll;
 }
 
 .sidenav-desc{text-align:center;
-  font-size:14px;
+  font-size:42rpx;
   color:#505b67;
-  margin-top: 20px;
-  margin-bottom:30px;
+  margin-top: 40rpx;
+  margin-bottom:60rpx;
 }
 .menu-group{
-  height: 30px;
-  line-height: 30px;
-  padding:14px 0 15px;
-  border-bottom:1px solid #1e2631;
-  font-size: 14px;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding:30rpx 0 35rpx;
+  border-bottom:4rpx solid #1e2631;
+  font-size: 28rpx;
   color: #505b67;
 }
 .menu-groupactive{
-  padding:14px 0 15px;
+  padding:28rpx 0 30rpx;
   color:#fff;
+  font-size:28rpx;
 }
 
 /*主页面*/
 .container{
-  margin:15% 0px 0px 20%;
+  margin:15% 0rpx 0rpx 20%;
 }
 
 .section-title{
-  margin-bottom:16px;
+  margin-bottom:32rpx;
   color:#505b67;
-  font-size:18px;
-  border-left: 5px solid #505b67; padding-left:13px; 
-  font-weight:500;
-  font-size: 1.5rem;
+  font-size:48rpx;
+  border-left: 9rpx solid #505b67; padding-left:13rpx; 
+  font-weight:500; 
 }
 
 /*卡片样式*/
 .card{
   background-color:#ffffff;
-  box-shadow:0 0 6px 10px rgba(0, 0, 0, 0.05);
-  margin:16px;
-  padding:16px;
-  border-radius:6px;
+  box-shadow:0 0 12rpx 20rpx rgba(0, 0, 0, 0.05);
+  margin:32rpx;
+  padding:24rpx;
+  border-radius:12rpx;
 }
 
 /*卡片标题字体设置*/
 .card-title{
   color:#131821;
-  font-size:14px;
+  font-size:28rpx;
   font-weight:900
 }
 
 /*卡片简介字体设置*/
   .card-desc{
     color:#505b67;
-    font-size:13px;
-    height:24px;
+    font-size:26rpx;
+    height:45rpx;
     overflow:scroll;/*控制溢出，scorll:溢出时显示滚动条*/
-    margin-top: 5px;
-    margin-bottom:5px
+    margin-top: 8rpx;
+    margin-bottom:8rpx
 }

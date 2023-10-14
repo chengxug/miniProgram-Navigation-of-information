@@ -1,1 +1,60 @@
 /* pages/navegateOfPublicAccount/navigationOfPublicAccount.wxss */
+.header{
+  background-color:#fff;
+  margin:0rpx 0rpx 0rpx 0rpx;
+  padding-left: 60rpx;
+}
+.notice{
+  padding:20rpx 60rpx 20rpx 60rpx;
+}
+.notice-item{
+  padding:16rpx 30rpx 16rpx 30rpx;
+  font-size:24rpx;
+  color:#505b67;
+  border-radius:12rpx;
+}
+
+.container{
+  margin-top: 60rpx;
+  padding:0 30rpx;
+} 
+
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  margin-left: -8rpx;
+  margin-right: -8rpx;
+  padding-bottom: 20rpx;
+}
+.section-title{
+  margin-top:45rpx;
+  margin-bottom:32rpx;
+  color:#505b67;
+  font-size:48rpx;
+  border-left:9rpx solid #505b67;
+  padding-left:13rpx;
+  font-weight:500;
+}
+.card{
+  background-color: #fff;
+  width:100%;
+  box-shadow: 0 0 12rpx 20rpx rgba(0, 0, 0, 0.05);
+  margin:32rpx 32rpx 0rpx 32rpx;
+  padding:32rpx;
+  border-radius:20rpx;
+}
+
+.card-title{
+  color: #131821;
+  font-size: 28rpx;
+  font-weight: 900;
+}
+
+.card-desc{
+  color:#505b67;
+  font-size: 26rpx;
+  height: 60rpx;
+  overflow: scroll;
+  margin-top:8rpx;
+  margin-bottom:8rpx;
+}

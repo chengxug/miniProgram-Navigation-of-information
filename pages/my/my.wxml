@@ -1,2 +1,11 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="container">
+  <view class="header">
+  <!--此处应当设置为让用户上传-->
+    <image src="../../image/speaker.png " class="avatar"></image> 
+    <view class="nickname">咕</view>
+  </view>
+  <view class="list">收藏 <view class="arrow-right"></view></view>
+  <view class="list">联系我们<view class="arrow-right"></view></view>
+  <view class="list">问题反馈<view class="arrow-right"></view></view>
+  <view class="list">设置<view class="arrow-right"></view></view>
+</view>

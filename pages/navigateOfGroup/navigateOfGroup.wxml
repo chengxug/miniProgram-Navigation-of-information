@@ -1,10 +1,20 @@
 <!--pages/navigateOfGroup/navigateOfGroup.wxml-->
-<view class="page">
+
+<!--定义模板：主页面的项-->
+<template name="container-item">
+  <view class="section-title">{{title}}</view>
+  <block wx:for="{{item}}">
+    <view class = "card">
+      <view class = "card-title" data-number="{{item.number}}" catchlongpress="copyText">{{item.number}}</view>
+      <view class = "card-desc">{{item.desc}}</view>
+    </view>
+  </block>
+</template>
 
   <!--小喇叭-->
   <view class="header">
     <view class="notice">
-      <view class="notice-item">长按QQ群号，微信号可复制</view>
+      <view class="notice-item"><text class="iconfont icon-volume-up-solid" style="margin-right: 20rpx"></text>长按QQ群号，微信号可复制</view>
     </view>
   </view>
 
@@ -14,28 +24,35 @@
     <!-- <block> 并不是一个组件，它仅仅是一个包装元素，不会在页面中做任何渲染，只接受控制属性。
     wx:for,wx:if都是控制属性，用wx:for循环渲染列表，并用wx:if判断哪一个item是被选中状态-->
       <block wx:for="{{navItems}}">
-         <view class="menu-group{{curNav == item.id ? 'active' : ''}}" bindtap="navToPage" data-index="{{index}}" data-id="{{item.id}}" data-path="{{item.path}}"> {{item.name}} </view>
+         <view class="menu-group{{curNav == item.id ? 'active' : ''}}" bindtap="switchPage" data-index="{{index}}" data-id="{{item.id}}"> {{item.name}} </view>
          <!--用js中的数组navItems来创建元素，并把数组中对象的值id，path，index绑定到元素上。用?:运算符做判断，是被选中项的类名为menu-groupactive-->
       </block>
   </view>
 
   <!--主页面-->
-  <view class="container">
+<view class="container">
+  <block wx:if="{{curNav == 1}}">
+    <template is="container-item" data="{{title: 'QQ群', item:conItemsQQ_1}}"></template>
+    <template is="container-item" data="{{title:'微信群',item:conItemsWX_1}}"></template>
+  </block>
 
-    <view class="section-title">QQ群</view>
-    <block wx:for="{{conItemsQQ}}">
-        <view class="card">
-          <view class="card-title" data-number="{{item.number}}" catchlongpress="copyText"> {{item.number}}</view> <!--绑定事件：长按复制-->
-          <view class="card-desc">{{item.desc}}</view>
-        </view>
-    </block>
-    
-    <view class="section-title">微信群</view>
-    <block wx:for="{{conItemsWX}}">
-      <view class="card">
-        <view class="card-title" data-number="{{item.number}}" catchlongpress="copyText">{{item.number}}</view>
-        <view class="card-desc">{{item.desc}}</view>
-      </view>
-    </block>
-  </view>
+  <block wx:if="{{curNav == 2}}">
+    <template is="container-item" data="{{title:'QQ群', item:conItemsQQ_2}}"></template>
+    <template is="container-item" data="{{title:'微信群', item:conItemsWX_2}}"></template>
+  </block>
+
+  <block wx:if="{{curNav == 3}}">
+    <template is="container-item" data="{{title:'QQ群', item:conItemsQQ_3}}"></template>
+    <template is="container-item" data="{{title:'微信群', item:conItemsWX_3}}"></template>
+  </block>
+  <block wx:if="{{curNav == 4}}">
+    <template is="container-item" data="{{title:'QQ群',item:conItemsQQ_4}}"></template>
+    <template is="container-item" data="{{title:'微信群',item:conItemsWX_4}}"></template>
+  </block>
+
+  <block wx:if="{{curNav == 5}}">
+    <template is="container-item" data="{{title:'QQ群', item:conItemsQQ_5}}"></template>  
+    <template is="container-item" data="{{title:'微信群', item:conItemsWX_5}}"></template>
+  </block>
 </view>
+

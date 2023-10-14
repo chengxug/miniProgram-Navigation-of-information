@@ -1,1 +1,105 @@
 /* pages/navigateOfWeb/navigationOfWeb.wxss */
+
+/*顶部*/
+.header{
+  background-color:#fff;
+  margin:0rpx 0rpx 0rpx 0rpx;
+  padding-left: 60rpx;
+}
+.notice{
+  padding:20rpx 60rpx 20rpx 60rpx;
+}
+.notice-item{
+  padding:16rpx 30rpx 16rpx 30rpx;
+  font-size:24rpx;
+  color:#505b67;
+  box-shadow:0 0 12rpx 4rpx rgba(0,0,0,0.05);
+  border-radius:12rpx;
+}
+
+/**/
+.container{
+  margin-top: 60rpx;
+  padding:0 30rpx;
+}
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  /* min-width: 100%; */
+  margin-left: -8rpx;
+  margin-right:-8rpx;
+  padding-bottom: 20rpx; 
+}
+
+.section-title{
+  margin-top:45rpx;
+  margin-bottom:32rpx;
+  color:#505b67;
+  font-size:48rpx;
+  border-left:9rpx solid #505b67;
+  padding-left:13rpx;
+  font-weight: 500;
+}
+/* .col{
+  padding:0px 8px;
+  font:16px;
+}
+.colorful-card{
+  display: flex;
+  margin:0px 0px 10rpx 5rpx ;
+  padding:13rpx;
+  border-radius:10rpx;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+}
+ .row .col:nth-child(1) .colorful-card{
+  background-color: #608CEE;
+}
+.row .col:nth-child(2) .colorful-card{
+  background-color: #FB5962;
+}
+.row .col:nth-child(3) .colorful-card{
+  background-color: #FBB359;
+}
+
+.row .col:nth-child(4) .colorful-card{
+  background-color: #53BF6B;
+} */
+
+/*卡片样式*/
+.card{
+  /* display: block; */
+  /* position: relative; */
+  width:100%;
+  background-color:#ffffff;
+  box-shadow:0 0 12rpx 20rpx rgba(0, 0, 0, 0.05);
+  margin:32rpx 32rpx 0 32rpx;
+  padding:24rpx;
+  border-radius:20rpx;
+}
+
+/*卡片标题字体设置*/
+.card-title{
+  color:#131821;
+  font-size:28rpx;
+  font-weight:900
+}
+.card-url{
+  /* display:contents; */
+  font-size: 27rpx;
+  color:#44474e;
+  width:500rpx;
+  overflow: hidden;
+  white-space: nowrap; /* 防止文本换行 */
+  text-overflow: ellipsis; /* 使用省略号截断溢出文本 */
+}
+/*卡片简介字体设置*/
+  .card-desc{
+    color:#505b67;
+    font-size:26rpx;
+    height:60rpx;
+    overflow:scroll;/*控制溢出，scorll:溢出时显示滚动条*/
+    margin-top: 8rpx;
+    margin-bottom:8rpx
+}

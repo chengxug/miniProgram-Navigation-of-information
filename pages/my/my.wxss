@@ -1,1 +1,52 @@
 /* pages/my/my.wxss */
+page{
+  
+  width:100%;
+  height:100%;
+}
+
+.header{
+  display:flex;
+  padding-top:30rpx;
+  padding-bottom:50rpx;
+  margin-bottom:30rpx;
+  background-color: #fff;
+}
+.avatar{
+  height:100px;
+  width: 100px;
+  background-color: #ffff;
+  border-radius:12%;
+  object-fit:cover;
+  margin:30rpx 10rpx 30rpx 60rpx; 
+}
+
+.nickname{
+  margin-top:30rpx;
+  font-size:56rpx;
+  margin-left:30rpx;
+}
+
+.list{
+  position: relative;
+  background:#ffff;
+  padding-top:20rpx;
+  padding-left: 25rpx;
+  padding-bottom: 20rpx;
+  /* margin:10rpx; */
+  font-size:28rpx;
+  box-shadow: 0 0 12rpx 4rpx rgba(0,0,0,0.05);
+}
+
+.arrow-right{
+  content:"";
+  height:20rpx;
+  width: 20rpx;
+  border-width: 7rpx 7rpx 0 0;
+  border-style: solid;
+  border-color:rgb(206, 206, 206);
+  transform: matrix(0.71,0.71,-0.71,0.71,0,0);
+  position:absolute;
+  top:35%;
+  right:2%;
+}
