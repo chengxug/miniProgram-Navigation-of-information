@@ -6,8 +6,6 @@ page{
 
 /*顶部*/
 .header{
-  /* position:absolute;
-  top:0; */
   background-color:#FCFCFC;
   margin:0 0 0 20%;
   padding:0 0 0 60rpx;
@@ -34,7 +32,7 @@ page{
 
 /*左侧边栏  */
 .sidenav{
-  background-color:#131821;
+  background-color:#b3dee5;
   position: fixed;
   /* 设置top,left,bottom,right,元素位置相对浏览器窗口固定 */
   top: 0;
@@ -57,14 +55,14 @@ page{
   height: 60rpx;
   line-height: 60rpx;
   padding:30rpx 0 35rpx;
-  border-bottom:4rpx solid #1e2631;
-  font-size: 28rpx;
-  color: #505b67;
+  border-bottom:2rpx solid #fae6b1;
+  font-size: 35rpx;
+  color: #31525b;
 }
 .menu-groupactive{
   padding:28rpx 0 30rpx;
-  color:#fff;
-  font-size:28rpx;
+  color:#FFA500;
+  font-size:40rpx;
 }
 
 /*主页面*/
