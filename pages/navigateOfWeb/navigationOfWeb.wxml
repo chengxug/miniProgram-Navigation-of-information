@@ -1,4 +1,6 @@
 <!--pages/navigateOfWeb/navigationOfWeb.wxml-->
+
+<!--模板语法，定义模板供主页面使用-->
 <template name="container-item">
   <view class="section-title">{{title}}</view>
   <block wx:for="{{item}}">
@@ -9,23 +11,18 @@
     </view>
   </block>
 </template>
-<!--小喇叭-->
+
+<!--顶部小喇叭-->
 <view class="header">
   <view class="notice">
-    <view class="notice-item"
-      ><text class="iconfont icon-volume-up-solid" style="margin: 20rpx"></text
-      >长按可复制网址</view
-    >
+    <!--使用iconfont icon-volume-up-solid需要包含resouce目录下的style.wxss文件-->
+    <view class="notice-item"><text class="iconfont icon-volume-up-solid" style="margin: 20rpx"></text>长按可复制网址</view>
   </view>
 </view>
 
 <!--主内容区-->
 <view class="container">
   <view class="row">
-    <!-- <view class="col"> <view class="colorful-card">常见问题</view> </view>
-    <view class="col"> <view class="colorful-card">问题反馈</view> </view>
-    <view class="col"><view class="colorful-card">补充信息</view> </view>
-    <view class="col"><view class="colorful-card">联系我们</view> </view> -->
     <template is="container-item" data="{{title:'学校官方信息',item:officialInfomation}}"></template>
     <template is="container-item" data="{{title:'学术和课程支持', item:couseworkAndAcademicSupport}}"></template>
     <template is="container-item" data="{{title:'校园生活',item:campusLife}}"></template>

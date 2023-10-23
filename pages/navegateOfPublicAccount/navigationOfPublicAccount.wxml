@@ -1,5 +1,5 @@
 <!--pages/navegateOfPublicAccount/navigationOfPublicAccount.wxml-->
-
+<!--模板语法，建立一个模板，供主页面使用-->
 <template name="container-item">
   <view class="section-title">{{title}}</view>
   <block wx:for="{{item}}">
