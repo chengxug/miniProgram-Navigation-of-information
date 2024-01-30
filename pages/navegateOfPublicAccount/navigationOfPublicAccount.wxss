@@ -11,6 +11,7 @@
   padding: 16rpx 30rpx 16rpx 30rpx;
   font-size: 24rpx;
   color: #505b67;
+  box-shadow: 0 0 12rpx 4rpx rgba(0, 0, 0, 0.05);
   border-radius: 12rpx;
 }
 
