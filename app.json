@@ -1,7 +1,7 @@
 {
   "pages" : [
-    "pages/navigateOfGroup/navigateOfGroup",
     "pages/navigateOfWeb/navigationOfWeb",
+    "pages/navigateOfGroup/navigateOfGroup",
     "pages/navegateOfPublicAccount/navigationOfPublicAccount",
     "pages/my/my"
   ],
@@ -39,5 +39,6 @@
     "navigationBarTitleText": "小程序",
     "navigationBarTextStyle":"white",
     "enablePullDownRefresh":true
-}
+},
+  "style":"v2"
 }
