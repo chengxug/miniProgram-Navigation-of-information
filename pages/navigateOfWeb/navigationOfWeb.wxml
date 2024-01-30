@@ -22,6 +22,20 @@
 
 <!--主内容区-->
 <view class="container">
+  <swiper class="swiper-container" indicator-dots indicator-color="white" indicator-active-color="#131821" autoplay interval="3000" circular>
+    <swiper-item>
+      <image src="../../image/朝晖校区-梦溪村.webp" mode="aspectFit"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../image/莫干山.webp" mode="aspectFit"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../image/朝晖路景.webp" mode="aspectFit"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../image/静湖雪景.webp" mode="aspectFit"></image>
+    </swiper-item>
+  </swiper>
   <view class="row">
     <template is="container-item" data="{{title:'学校官方信息',item:officialInfomation}}"></template>
     <template is="container-item" data="{{title:'学术和课程支持', item:couseworkAndAcademicSupport}}"></template>

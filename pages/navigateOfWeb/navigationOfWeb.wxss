@@ -19,8 +19,13 @@
 
 /**/
 .container {
-  margin-top: 60rpx;
-  padding: 0 30rpx;
+  margin-top: 0rpx;
+  padding: 0 32rpx;
+}
+
+.swiper-container{
+  height:500rpx;
+  padding:0 32rpx;
 }
 .row {
   display: flex;
